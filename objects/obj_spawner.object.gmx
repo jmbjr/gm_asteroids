@@ -25,13 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_asteroid))
+            <string>var ii;
+
+if (!instance_exists(obj_asteroid))
 {
-    instance_create(random(room_width),random(room_height), obj_asteroid)
-    instance_create(random(room_width),random(room_height), obj_asteroid)
-    instance_create(random(room_width),random(room_height), obj_asteroid)
-    instance_create(random(room_width),random(room_height), obj_asteroid)
-    instance_create(random(room_width),random(room_height), obj_asteroid)
+    global.level += 1;
+    var asteroids = global.num_base_asteroids + global.level;
+    for (ii = 0; ii &lt; asteroids; ii += 1)
+    {
+        instance_create(random(room_width),random(room_height), obj_asteroid)
+    }
 }
 </string>
           </argument>

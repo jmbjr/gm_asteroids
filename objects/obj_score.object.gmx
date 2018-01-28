@@ -30,6 +30,9 @@ global.life = 3;
 global.framerate = 60;
 global.dur_inv = 4;
 global.fake_friction = 0.03;
+global.level = 0;
+global.num_base_asteroids = 5;
+
 
 
 </string>
@@ -54,32 +57,21 @@ global.fake_friction = 0.03;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_left);
+            <string>var anchor_vert = 16;
+var anchor_horiz = 64;
+
+draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 draw_set_color(c_white);
 draw_set_font(fnt_small);
-draw_text(64,32,"SCORE: " + string(global.points));
-draw_text(64,64,"SHIPS: " + string(global.life));
+draw_text(anchor_horiz,anchor_vert ,"SECTOR: " + string(global.level));
+draw_text(anchor_horiz,anchor_vert + 32,"SCORE: " + string(global.points));
+draw_text(anchor_horiz,anchor_vert + 64,"SHIPS: " + string(global.life));
+
 
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="82">
-      <action>
-        <libid>1</libid>
-        <id>331</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_restart_game</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>
