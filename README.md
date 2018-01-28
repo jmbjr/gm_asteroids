@@ -11,11 +11,11 @@ I made a few changes:
 - Variablize invincibility duration and gradually slow down flashing to give player better indication on when invincibility will end.
 - added a Level system which increases the number of asteroids per sector.
 
-How To Play:
-SPACEBAR - shoot
-UP - accelerate ship
-RIGHT/LEFT - rotate ship
-TAB - slows ship 
+* How To Play:
+* SPACEBAR - shoot
+* UP - accelerate ship
+* RIGHT/LEFT - rotate ship
+* TAB - slows ship 
 
 Ship has about 4 seconds of invincibility after spawning (game start or after you blow up)
 
