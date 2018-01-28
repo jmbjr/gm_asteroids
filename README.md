@@ -11,7 +11,7 @@ I made a few changes:
 - Variablize invincibility duration and gradually slow down flashing to give player better indication on when invincibility will end.
 - added a Level system which increases the number of asteroids per sector.
 
-* How To Play:
+How To Play:
 * SPACEBAR - shoot
 * UP - accelerate ship
 * RIGHT/LEFT - rotate ship
