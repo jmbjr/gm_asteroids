@@ -81,7 +81,7 @@ var angle = 5;
 var impulse = 0.2;
 var max_speed = 6;
 
-if (keyboard_check(vk_shift)) 
+if (keyboard_check(vk_tab)) 
 {
     angle = 2
     impulse = 0.05;
